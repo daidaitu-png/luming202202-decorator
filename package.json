@@ -1,0 +1,32 @@
+{
+  "name": "demo0221",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon --watch dist/ts/1.decorator js exec node ./dist/ts/1.decorator/1.ClassDecorator.js",
+    "start": "concurrently npm:dev:*",
+    "tsc": "tsc src/ts/1.decorator/1.ClassDecorator.js --target ES5 -w --experimentalDecorators"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daidaitu-png/luming202202-decorator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "vuex": "^4.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/daidaitu-png/luming202202-decorator/issues"
+  },
+  "homepage": "https://github.com/daidaitu-png/luming202202-decorator#readme"
+}
