@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cmd": "ts-node src/ts/9.Decorator/4.classDecorator.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "tsc -w",
-    "dev:start": "nodemon --watch dist/ts/1.decorator js exec node ./dist/ts/1.decorator/1.ClassDecorator.js",
+    "dev:start": "nodemon --watch dist/ts/9.Decorator js exec node ./dist/ts/9.Decorator/2.classDecorator.js",
     "start": "concurrently npm:dev:*",
-    "tsc": "tsc src/ts/1.decorator/1.ClassDecorator.js --target ES5 -w --experimentalDecorators"
+    "tsc": "tsc src/ts/9.decorator/2.classDecorator.ts --target ES5 -w --experimentalDecorators"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   "dependencies": {
     "concurrently": "^7.0.0",
     "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "reflect-metadata": "^0.1.13",
     "vuex": "^4.0.2"
   },
   "bugs": {

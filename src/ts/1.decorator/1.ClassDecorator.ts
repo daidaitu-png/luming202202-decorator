@@ -1,8 +1,8 @@
 export {};
 
 function FirstClassDecorator(targetClass: any) {
-	let targetClassObj = new targetClass();
-	targetClassObj.buy();
+	// let targetClassObj = new targetClass();
+	// targetClassObj.buy();
 	console.log("targetClass.name: ", targetClass.name);
 }
 
